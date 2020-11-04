@@ -50,7 +50,7 @@ class MyApp(QWidget):
         rbtn2.setText('Second Button')
 
         self.setGeometry(300, 300, 300, 200)
-        self.setWindowTitle('QRadioButton')
+        self.setWindowTitle('QRadioButton') # setText() 메서드를 통해서도 라벨의 텍스트를 설정할 수 있습니다.
         self.show()
 
 
