@@ -1,4 +1,5 @@
 # 날짜와 시간 표시 : https://wikidocs.net/22074
+
 """
 from PyQt5.QtCore import QDate
 from PyQt5.QtCore import QTime
@@ -34,7 +35,7 @@ from PyQt5.QtCore import QDate, Qt
 class MyApp(QMainWindow):
     def __init__(self):
         super().__init__()
-        
+
         self.date = QDate.currentDate()
         self.initUI()
 
