@@ -15,8 +15,7 @@ class MyApp(QWidget):
     def __init__(self):
         super().__init__()
         self.initUI()
-305163
-51056
+
     def initUI(self):
         tab1 = QWidget()
         tab2 = QWidget()
