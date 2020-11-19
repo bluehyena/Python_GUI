@@ -26,16 +26,16 @@ class MyApp(QWidget):
 
         self.setLayout(grid)
 
-        self.setWindowTitle('Box Layout')
+        self.setWindowTitle('항공권 비교 분석기')
         self.setGeometry(300, 300, 480, 320)
         self.show()
 
     def createFirstExclusiveGroup(self):
-        groupbox = QGroupBox('Exclusive Radio Buttons')
+        groupbox = QGroupBox('항공권의 종류를 선택하세요')
 
-        radio1 = QRadioButton('Radio1')
-        radio2 = QRadioButton('Radio2')
-        radio3 = QRadioButton('Radio3')
+        radio1 = QRadioButton('편도')
+        radio2 = QRadioButton('왕복')
+        radio3 = QRadioButton('다구간')
         radio1.setChecked(True)
 
         vbox = QVBoxLayout()
@@ -47,7 +47,7 @@ class MyApp(QWidget):
         return groupbox
 
     def createSecondExclusiveGroup(self):
-        groupbox = QGroupBox('Exclusive Radio Buttons')
+        groupbox = QGroupBox('왕복일 경우 체크 해주세요')
         groupbox.setCheckable(True)
         groupbox.setChecked(False)
 
